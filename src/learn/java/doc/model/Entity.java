@@ -7,5 +7,6 @@ public class Entity {
     private int damage;
     private int speed;
     private int armor;
+    private String displayName;
 
 }
