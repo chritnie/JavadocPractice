@@ -17,11 +17,21 @@ public class WorldServiceImpl implements WorldService {
 
     @Override
     public Entity getRandomEntity() {
-        return world.getEntities().get(random.nextInt(world.getEntities().size() - 1));
+        System.out.println("Get random entity");
+        return world.getEntities().get(random.nextInt(world.getEntities().size()));
     }
 
     @Override
     public void createEntity() {
-        world.getEntities().add(new Entity());
+        System.out.println("Created an entity");
+        world.getEntities().add(new Entity(world));
+    }
+
+    /**
+     * Retrieves the world statistics.
+     */
+    @Override
+    public void getWorldStats() {
+        System.out.println("World stats: " + world.toString());
     }
 }

@@ -19,4 +19,9 @@ public interface WorldService {
      */
     void createEntity();
 
+    /**
+     * Retrieves the world statistics.
+     */
+    void getWorldStats();
+
 }
