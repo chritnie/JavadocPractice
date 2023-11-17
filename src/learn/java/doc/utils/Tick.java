@@ -3,12 +3,23 @@ package learn.java.doc.utils;
 import java.util.*;
 
 public class Tick {
-
+    /**
+     * This class has constructor Tick and method tick,
+     * that make a random choice of action on the base of set probabilities
+     */
     private final static Random random = new Random();
     int[] doing;
     int[] chance;
 
     public Tick(List<Integer> doing, List<Integer> chance) {
+        /**
+         * This constructor takes two lists of numbers (actions and their probabilities),
+         * compares them for being the same size, for being sorted in descending order,
+         * converts into arrays, and computes sums of chances
+         * <p>
+         * @throws Exception in case action and its probability are of different size
+         *                   in case chances aren't sorted
+         */
         if (doing.size() != chance.size()) {
             throw new IllegalArgumentException("doing and chance must have the same size");
         }
@@ -23,6 +34,11 @@ public class Tick {
     }
 
     public int tick() {
+        /**
+         * A method for checking if an action goes depending on its probability
+         * <p>
+         * @return The selected action, or -1 if no action is selected
+         */
         int j = random.nextInt(100);
         for (int i = 0; i < doing.length; i++) {
             if (j > chance[i]) {

@@ -2,6 +2,17 @@ package learn.java.doc.model;
 
 public class Entity {
 
+    /**
+     * Class for basic parameters of entities inhabiting the gaming world
+     * <p>
+     * @param int health - current amount of entity's health points
+     *            maxHealth - capacity of health pionts
+     *            damage - amount of damage the entity is able to inflict
+     *            speed - speed that the entity travels with
+     *            armor - points of damage the armor absorbs
+     * @param String displayName - entity's name
+     *
+     */
     private int health;
     private int maxHealth;
     private int damage;
