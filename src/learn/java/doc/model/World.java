@@ -7,13 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringJoiner;
 
-/**
- * Main class of entity World.
- *
- * @since 1.0.0
- * @author all-creator
- */
 public class World implements Runnable {
+    /**
+     * Main class of entity World.
+     * <p>
+     * It provides list of entities, simulates a world,
+     * and has methods for accessing and displaying it's statitistics
+     * </p>
+     */
 
     private final ArrayList<Entity> entities = new ArrayList<>();
 
