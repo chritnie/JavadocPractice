@@ -14,3 +14,23 @@ public class Application {
         new Thread(new World()).start();
     }
 }
+// Почему при ввода моих коментариев сверху у меня метод и тд перестало свечиваться
+
+/**
+* This is my so called first collab 
+* @author Fredrick
+* @Version 2023.2.4
+*/
+
+/**
+*
+* @param args args stands for an argument. This code below was set to print a message
+* @return The result of any text to be printed
+*/
+
+
+ public class Application {
+    public static void Application(String [] args) {
+        system.out.println("LV")
+            }
+}
